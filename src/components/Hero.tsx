@@ -2,15 +2,13 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
-import { useRouter } from "next/navigation";
 
 export default function Hero() {
-  const router = useRouter();
   return (
     <div className="min-h-screen flex flex-col justify-center items-center gap-12 max-w-[1000px] mx-auto">
       <div className="flex flex-col items-center gap-8">
         <h1 className="text-5xl font-bold text-center">
-          Hi, I'm <span className="text-violet-600">Damini Pawar</span>
+          Hi, I&apos;m <span className="text-violet-600">Damini Pawar</span>
         </h1>
         <p className="text-2xl font-medium text-center">
           Full-Stack Developer passionate about building scalable,

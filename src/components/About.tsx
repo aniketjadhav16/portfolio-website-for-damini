@@ -1,17 +1,23 @@
 "use client";
+import Image from "next/image";
 
 export default function About() {
   return (
-    <div id="about" className="flex flex-col max-w-[1000px] bg-gray-200 rounded-xl mx-auto pb-10 mb-10 p-5">
+    <div
+      id="about"
+      className="flex flex-col max-w-[1000px] bg-gray-200 rounded-xl mx-auto pb-10 mb-10 p-5"
+    >
       <h1 className="mx-auto text-5xl font-bold m-10">About Me</h1>
 
       <div className="flex flex-col lg:flex-row justify-between mx-auto gap-10">
         <div className="flex-1 flex justify-center">
-            <img
-                src="/about-section-image.png"
-                alt="About section"
-                className="w-60 object-cover overflow-hidden rounded-xl shadow-xl mb-4"
-            />
+          <Image
+            src="/about-section-image.png"
+            alt="About section"
+            width={240}
+            height={240}
+            className="object-cover overflow-hidden rounded-xl shadow-xl mb-4"
+          />
         </div>
         <p className="flex-1 max-w-120 text-xl">
           To utilize my technical skills for achieving the target and developing
